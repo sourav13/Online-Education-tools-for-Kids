@@ -1,5 +1,27 @@
 body {margin: 0;}
 
+nav ul,footer ul {
+    padding: 10px 16px;
+    list-style: none;
+    background-color: #eee;
+    font-size: 17px;
+}
+nav ul li ,footer ul li{display: inline;}
+nav ul li+li:before , footer ul li+li:before{
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+}
+nav ul li a ,footer ul li a{
+    color: #0275d8;
+    text-decoration: none;
+}
+nav ul li a:hover ,footer ul li a:hover{
+    color: #01447e;
+    text-decoration: underline;
+}
+
+/*
 nav ul{
     list-style-type: none;
     margin: 0;
@@ -23,7 +45,7 @@ nav li {float: left;}
 
 nav li a:hover:not(.active) {background-color: #111;}
 
-nav li a.active {background-color: #4CAF50;}
+nav li a.active {background-color: #4CAF50;}*/
 
 /*.dropdown {
     position: relative;
